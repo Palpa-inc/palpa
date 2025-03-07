@@ -4,11 +4,9 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const CustomCursor = () => {
-  const [mounted, setMounted] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    setMounted(true);
     // デフォルトのカーソルを非表示にする
     document.body.style.cursor = "none";
 
@@ -23,8 +21,6 @@ const CustomCursor = () => {
       window.removeEventListener("mousemove", updateMousePosition);
     };
   }, []);
-
-  if (!mounted) return null;
 
   return (
     <>
