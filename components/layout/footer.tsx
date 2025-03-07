@@ -22,7 +22,7 @@ export function Footer() {
             © {new Date().getFullYear()} Palpa. All rights reserved.
           </p>
         </div>
-        <nav className="flex gap-4 sm:gap-6">
+        <nav className="flex flex-wrap gap-2 sm:gap-6">
           <Link
             href="#services"
             className="text-sm font-medium transition-colors hover:text-primary"
@@ -43,6 +43,13 @@ export function Footer() {
             scroll={false}
           >
             お問い合わせ
+          </Link>
+          <Link
+            href="/privacypolicy"
+            className="text-sm font-medium transition-colors hover:text-primary"
+            scroll={false}
+          >
+            プライバシーポリシー
           </Link>
         </nav>
       </div>
