@@ -18,6 +18,7 @@ export function ContactSection() {
           toast.error("送信に失敗しました。");
         }
       } catch (error) {
+        console.log(error);
         toast.error("エラーが発生しました。");
       }
     });
