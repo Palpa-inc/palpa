@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export function Header() {
   return (
-    <header className="container flex h-16 items-center justify-between py-6 border-b border-gray-300/40 bg-background/40 backdrop-blur-md sticky top-0 z-50">
+    <header className="container flex h-14 items-center justify-between py-6 border-b border-gray-300/40 bg-background/40 backdrop-blur-md sticky top-0 z-50">
       <Link href="/" className="flex flex-row items-center space-x-2">
         <Image
           src="/icon.png"
@@ -31,7 +31,7 @@ export function Header() {
       </nav>
       <Button className="relative overflow-hidden rounded-full" asChild>
         <Link href="#contact">
-          <span className="relative z-10 px-2">お問い合わせ</span>
+          <span className="relative z-10 px-0.5">お問い合わせ</span>
           <span className="absolute inset-0 -z-0 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-500 opacity-90"></span>
         </Link>
       </Button>
