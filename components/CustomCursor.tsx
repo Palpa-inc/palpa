@@ -7,6 +7,9 @@ const CustomCursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
+    // サーバーサイドレンダリング時は実行しない
+    if (typeof window === "undefined") return;
+
     // デフォルトのカーソルを非表示にする
     document.body.style.cursor = "none";
 
