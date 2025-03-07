@@ -8,8 +8,10 @@ export const metadata: Metadata = {
 };
 
 async function getPrivacyData() {
-  // const res = await fetch("https://palpa.co.jp/docs/privacy.json");
-  const res = await fetch("http://localhost:3001/docs/privacy.json");
+  const isDev = process.env.NODE_ENV === "development";
+  const res = isDev
+    ? await fetch("http://localhost:3001/docs/privacy.json")
+    : await fetch("https://palpa.co.jp/docs/privacy.json");
   const data = await res.json();
   return data.terms;
 }
