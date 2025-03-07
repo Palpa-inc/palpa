@@ -9,7 +9,7 @@ import { ContactSection } from "@/components/sections/contact";
 export default function Home() {
   return (
     <div className="relative">
-      <CreativeDotBackground />
+      {/* <CreativeDotBackground /> */}
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="container py-10">

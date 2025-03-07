@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Lenis from "lenis";
 
 export default function LenisLayout({
@@ -8,7 +8,13 @@ export default function LenisLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const [isMounted, setIsMounted] = useState(false);
+
   useEffect(() => {
+    setIsMounted(true);
+
+    if (typeof window === "undefined") return;
+
     const lenis = new Lenis();
 
     function raf(time: number) {
