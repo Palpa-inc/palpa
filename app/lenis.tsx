@@ -8,7 +8,7 @@ export default function LenisLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [isMounted, setIsMounted] = useState(false);
+  const [, setIsMounted] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);
