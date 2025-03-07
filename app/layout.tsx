@@ -12,6 +12,18 @@ export const metadata: Metadata = {
   title: "Palpa - コンサルティング・Web3事業支援・システム開発支援",
   description:
     "枠を超える発想と創造で、お客様のビジネスに新しい価値を提供します。",
+  icons: {
+    icon: [
+      { url: "/icon.png" },
+      { url: "/icon.png", sizes: "32x32" },
+      { url: "/apple-icon.png", sizes: "180x180" },
+    ],
+    shortcut: "/shortcut-icon.png",
+    apple: [
+      { url: "/apple-icon.png" },
+      { url: "/apple-icon-dark.png", media: "(prefers-color-scheme: dark)" },
+    ],
+  },
 };
 
 export default function RootLayout({
