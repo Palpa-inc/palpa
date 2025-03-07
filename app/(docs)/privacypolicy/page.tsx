@@ -8,12 +8,27 @@ export const metadata: Metadata = {
 };
 
 async function getPrivacyData() {
-  const isDev = process.env.NODE_ENV === "development";
-  const res = isDev
-    ? await fetch("http://localhost:3001/docs/privacy.json")
-    : await fetch("https://palpa.co.jp/docs/privacy.json");
-  const data = await res.json();
-  return data.terms;
+  try {
+    const isDev = process.env.NODE_ENV === "development";
+    const res = isDev
+      ? await fetch("http://localhost:3001/docs/privacy.json")
+      : await fetch("https://palpa.co.jp/docs/privacy.json", {
+          next: { revalidate: 3600 },
+        });
+
+    if (!res.ok) {
+      console.error(
+        `Failed to fetch privacy data: ${res.status} ${res.statusText}`
+      );
+      return []; // デフォルト値を返す
+    }
+
+    const data = await res.json();
+    return data.terms || [];
+  } catch (error) {
+    console.error("Error fetching privacy data:", error);
+    return []; // エラー時にデフォルト値を返す
+  }
 }
 
 export default async function PrivacyPolicy() {
