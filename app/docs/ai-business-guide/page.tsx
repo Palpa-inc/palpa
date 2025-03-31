@@ -228,7 +228,7 @@ const AiBusinessGuidePage = () => {
   }));
 
   return (
-    <div className="container mx-auto p-4 max-w-4xl">
+    <div className="container mx-auto p-4 max-w-3xl">
       <article className="bg-white border pt-6 px-4 sm:p-8 rounded-3xl">
         <div className="relative w-full h-[360px] mb-4 -p-4">
           <Image
