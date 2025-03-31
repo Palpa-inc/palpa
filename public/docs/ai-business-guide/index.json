@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "publishedAt": "2024年3月31日",
+    "lastUpdated": "2024年3月31日",
+    "author": {
+      "name": "木次 大樹",
+      "avatar": "/author.png"
+    }
+  },
+  "chapters": [
+    "chapter1.json",
+    "chapter2.json",
+    "chapter3.json",
+    "chapter4.json",
+    "chapter5.json",
+    "chapter6.json"
+  ]
+}
