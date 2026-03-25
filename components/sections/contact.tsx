@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { useTransition, useState } from "react";
@@ -168,12 +169,12 @@ export function ContactSection() {
                       className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                     >
                       弊社の
-                      <a
+                      <Link
                         href="/privacypolicy"
                         className="text-primary hover:underline"
                       >
                         プライバシーポリシー
-                      </a>
+                      </Link>
                       に同意します
                     </motion.label>
                   </motion.div>
