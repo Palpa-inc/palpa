@@ -7,6 +7,7 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{ts,tsx}",
+    "./content/**/*.mdx",
     "*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
