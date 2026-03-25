@@ -2,8 +2,10 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
 import hero from "@/public/hero.json";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 export function HeroSection() {
   return (
