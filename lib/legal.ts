@@ -23,6 +23,7 @@ const COMPANY = {
 
 // アプリ追加はここにサービス名を足すだけ
 const APP_SERVICES: Record<string, string> = {
+  almonde: "Almonde",
   racoz: "ラコズ",
 };
 
