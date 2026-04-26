@@ -52,7 +52,7 @@ export function ContactSection() {
     <section id="contact" className="py-12 md:py-16 lg:py-20">
       <div className="mx-auto max-w-[59rem] space-y-4 text-center">
         <h2 className="relative inline-block text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-          <span className="absolute -inset-1 block -skew-y-0 bg-gradient-to-r from-purple-600 to-pink-500 opacity-80"></span>
+          <span className="absolute -inset-1 block -skew-y-0 bg-gradient-to-r from-indigo-600 to-cyan-500 opacity-80"></span>
           <span className="relative text-white">お問い合わせ</span>
         </h2>
         <p className="mx-auto max-w-[36rem] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -192,7 +192,7 @@ export function ContactSection() {
                       <span className="relative z-10">
                         {isPending ? "送信中..." : "送信する"}
                       </span>
-                      <span className="absolute inset-0 -z-0 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-500 opacity-90"></span>
+                      <span className="absolute inset-0 -z-0 bg-gradient-to-r from-indigo-700 via-blue-500 to-cyan-400 opacity-90"></span>
                     </Button>
                   </motion.div>
                 </motion.div>

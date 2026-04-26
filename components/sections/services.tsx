@@ -5,7 +5,7 @@ export function ServicesSection() {
     <section id="services" className="py-4 md:py-16 lg:py-4">
       <div className="max-w-[59rem] space-y-4">
         <h2 className="relative inline-block text-3xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
-          <span className="absolute -inset-1 block -skew-y-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-80"></span>
+          <span className="absolute -inset-1 block -skew-y-0 bg-gradient-to-r from-indigo-500 to-cyan-500 opacity-80"></span>
           <span className="relative text-white">サービス</span>
         </h2>
         <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -69,8 +69,8 @@ interface ServiceCardProps {
 function ServiceCard({ icon, title, description, features }: ServiceCardProps) {
   return (
     <div className="group relative overflow-hidden rounded-lg border bg-card p-6 transition-all duration-700 hover:-translate-y-1 hover:shadow-lg">
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-yellow-500/5 opacity-0 transition-opacity group-hover:opacity-100"></div>
-      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-purple-600 to-pink-500 bg-opacity-10">
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 via-transparent to-cyan-500/5 opacity-0 transition-opacity group-hover:opacity-100"></div>
+      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-indigo-600 to-cyan-500 bg-opacity-10">
         {icon}
       </div>
       <h3 className="mb-2 text-xl font-bold">{title}</h3>

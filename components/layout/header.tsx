@@ -32,7 +32,7 @@ export function Header() {
       <Button className="relative overflow-hidden rounded-full" asChild>
         <Link href="#contact">
           <span className="relative z-10 px-0.5">お問い合わせ</span>
-          <span className="absolute inset-0 -z-0 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-500 opacity-90"></span>
+          <span className="absolute inset-0 -z-0 bg-gradient-to-r from-indigo-700 via-blue-500 to-cyan-400 opacity-90"></span>
         </Link>
       </Button>
     </header>

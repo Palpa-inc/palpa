@@ -15,7 +15,7 @@ export function AboutSection() {
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
             <h2 className="relative inline-block text-3xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
-              <span className="absolute -inset-1 block -skew-y-0 bg-gradient-to-r from-purple-600 to-pink-500 opacity-80"></span>
+              <span className="absolute -inset-1 block -skew-y-0 bg-gradient-to-r from-indigo-600 to-cyan-500 opacity-80"></span>
               <span className="relative text-white">Palpaについて</span>
             </h2>
             <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -113,7 +113,7 @@ function AboutCard({
   return (
     <div className="relative overflow-hidden rounded-lg border bg-card p-6 transition-all hover:-translate-y-1 hover:shadow-lg">
       <div
-        className={`absolute ${gradientClasses[gradientPosition]} h-20 w-20 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 opacity-10 blur-xl`}
+        className={`absolute ${gradientClasses[gradientPosition]} h-20 w-20 rounded-full bg-gradient-to-r from-indigo-600 to-cyan-500 opacity-10 blur-xl`}
       ></div>
       <div className="flex items-center gap-3 mb-2">
         {icon && <div className="text-primary">{icon}</div>}

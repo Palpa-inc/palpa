@@ -51,9 +51,9 @@ export function CreativeDotBackground() {
         canvas.width,
         canvas.height
       );
-      gradient.addColorStop(0, "rgba(168, 85, 247, 0.4)"); // purple-600
-      gradient.addColorStop(0.5, "rgba(236, 72, 153, 0.4)"); // pink-500
-      gradient.addColorStop(1, "rgba(234, 179, 8, 0.4)"); // yellow-500
+      gradient.addColorStop(0, "rgba(99, 102, 241, 0.4)"); // indigo-500
+      gradient.addColorStop(0.5, "rgba(59, 130, 246, 0.4)"); // blue-500
+      gradient.addColorStop(1, "rgba(34, 211, 238, 0.4)"); // cyan-400
 
       const spacing = 30;
       const rows = Math.ceil(canvas.height / spacing);

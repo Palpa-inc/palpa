@@ -14,7 +14,7 @@ export function Footer() {
               height={30}
               className="rounded-full"
             />
-            <span className="text-lg font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-500 bg-clip-text text-transparent">
+            <span className="text-lg font-bold bg-gradient-to-r from-indigo-700 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
               Palpa
             </span>
           </Link>
